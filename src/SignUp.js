@@ -3,6 +3,8 @@ import CommuteNavBar from './Components/CommuteNavBar'
 import { Button, Form, FormFeedback, FormGroup, Label, Input} from 'reactstrap'
 import { Redirect } from 'react-router-dom'
 
+const BACKEND_URL = process.env.BACKEND_URL ? process.env.BACKEND_URL : 'https://ecocommute-server.herokuapp.com'
+
 class SignUp extends Component {
   state = {
     toHome: false,
@@ -29,7 +31,7 @@ class SignUp extends Component {
 
   submitForm(e) {
     e.preventDefault();
-    fetch('/user/new', {
+    fetch(BACKEND_URL + '/user/new', {
       method: 'POST',
       headers:{
         'Content-Type': 'application/json'
