@@ -7,6 +7,8 @@ import TransportationType from './Components/TransportationType'
 import CommuteNavBar from './Components/CommuteNavBar'
 import './Home.css';
 
+const BACKEND_URL = process.env.BACKEND_URL ? process.env.BACKEND_URL : ''
+
 class Home extends Component {
   state = {
     transportationTypes: [],
@@ -20,10 +22,10 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    fetch('/transportation-types')
+    fetch(BACKEND_URL + '/transportation-types')
       .then(response => response.json())
       .then(transportationTypes => this.setState({ transportationTypes }));
-    fetch('/user/all')
+    fetch(BACKEND_URL + '/user/all')
       .then(response => response.json())
       .then(users => {
         this.setState({ 
