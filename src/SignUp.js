@@ -3,7 +3,7 @@ import CommuteNavBar from './Components/CommuteNavBar'
 import { Button, Form, FormFeedback, FormGroup, Label, Input} from 'reactstrap'
 import { Redirect } from 'react-router-dom'
 
-const BACKEND_URL = process.env.BACKEND_URL ? process.env.BACKEND_URL : 'https://ecocommute-server.herokuapp.com'
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL ? process.env.REACT_APP_BACKEND_URL : 'https://ecocommute-server.herokuapp.com'
 
 class SignUp extends Component {
   state = {

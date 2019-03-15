@@ -7,7 +7,7 @@ import TransportationType from './Components/TransportationType'
 import CommuteNavBar from './Components/CommuteNavBar'
 import './Home.css';
 
-const BACKEND_URL = process.env.BACKEND_URL ? process.env.BACKEND_URL : ''
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL ? process.env.REACT_APP_BACKEND_URL : ''
 
 class Home extends Component {
   state = {
