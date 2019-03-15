@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "express": "^4.16.4",
+    "express-favicon": "^2.0.1",
+    "path": "^0.12.7",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1",
@@ -17,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://ecocommute-server.herokuapp.com/",
   "eslintConfig": {
     "extends": "react-app"
   },
