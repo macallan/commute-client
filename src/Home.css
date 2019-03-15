@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.transportation-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0px;
+}
